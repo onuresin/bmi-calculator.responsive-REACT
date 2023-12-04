@@ -383,12 +383,3 @@ input[type="number"]::-webkit-outer-spin-button {
     gap: 16px;
 }
 
-/*responsive 376px >*/
-@media (min-width:376px) {
- .bmi-content {
-    width: 768px;
- }
- .bmi-calculator {
-    width: 686px;
- }
-}
