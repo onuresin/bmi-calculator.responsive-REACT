@@ -14,8 +14,10 @@ body {
     margin: 0 auto;
 }
 .bmi-content {
+    position: relative;
     background-color: #fff;
     width: 375px;
+    height: 750px;
     margin: 0 auto;
     background-image: url('bmi-content-background-mobile.png');
     background-size: cover;
@@ -39,15 +41,131 @@ body {
         letter-spacing: -2.4px; 
         color: #253347;
     }
-    & p {
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 150%; /* 24px */ 
-        color: #5E6E85;
-        text-align: center;
+}
+.bmi-text h6 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%; /* 24px */ 
+    color: #5E6E85;
+    text-align: center;
+}
+.bmi-calculator {
+    position:absolute;
+    top: 71%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 16px;
+    width: 304px;
+    padding-top: 48px;
+    z-index: 1;
+    box-shadow: 16px 32px 56px 0px rgba(143, 174, 207, 0.25); 
+}
+.calculator {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    & h3 {
+        color: #253347;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: -1.2px; 
     }
 }
+.radioBtns {
+    display: flex;
+    gap: 24px;
+    color: #253347;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 150%; /* 24px */ 
+}
+.radioBtns label {
+    cursor: pointer;
+}
+.radioBtns input {
+    width: 20px;
+    height: 20px;
+}
 
+.unit {
+    margin-right: 18px;
+}
+.heightweight {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.miniTitle {
+    color: #5E6E85;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%; /* 21px */ 
+}
+.height, .weight {
+    border: 1px solid #d8e2e7;
+    border-radius: 12px;
+    padding: 20px 24px;
+    display: flex;
+    flex-direction: block;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    & input {
+        border: none;
+        color: #253347;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        letter-spacing: -1.2px; 
+        width: 173px;
+    }
+}
+.info {
+    color: #345FF6;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -1.2px; 
+
+}
+.result {
+    border-radius: 16px;
+    background: linear-gradient(90deg, #345FF6 0%, #587DFF 100%); 
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    & p {
+        color: #fff;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 150%; /* 21px */ 
+    }
+}
+.result-top-sec {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    & h4 {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 150%; /* 24px */ 
+    }
+    & h2 {
+        color: #fff;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 110%; /* 52.8px */
+        letter-spacing: -2.4px;  
+    }
+}
 /* placeholder içinde okların görünmemesi için*/
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
@@ -55,11 +173,25 @@ input[type="number"]::-webkit-outer-spin-button {
   margin: 0;
 }
 
-input[type="number"] {
-  -moz-appearance: textfield;
+@-moz-document url-prefix() {
+    input[type="number"] {
+      -moz-appearance: textfield;
+    }
 }
 /**/
-/* result section*/
+
+/* result section */
+.result-inner {
+    position: relative;
+    z-index: 0;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;;
+    width: 375px;
+    margin: 0 auto;
+    margin-top: 500px;
+}
 .result-section {
     border-radius: 16px;
     background: linear-gradient(90deg, #345FF6 0%, #587DFF 100%);
@@ -77,6 +209,7 @@ input[type="number"] {
         font-weight: 600;
         line-height: 110%; /* 52.8px */
         letter-spacing: -2.4px; 
+        color: #fff;
     }
     & h5 {
         font-size: 16px;
@@ -94,16 +227,6 @@ input[type="number"] {
     line-height: 150%; 
 }
 
-/* result section */
-
-.result-inner {
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    gap: 48px;;
-    width: 375px;
-    margin: 0 auto;
-}
 .result-left {
     background-image:  url(backgroundclr.png);
     background-repeat: no-repeat;
@@ -258,4 +381,14 @@ input[type="number"] {
     display: flex;
     flex-direction: column;
     gap: 16px;
+}
+
+/*responsive 376px >*/
+@media (min-width:376px) {
+ .bmi-content {
+    width: 768px;
+ }
+ .bmi-calculator {
+    width: 686px;
+ }
 }

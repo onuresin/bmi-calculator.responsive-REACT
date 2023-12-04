@@ -44,9 +44,9 @@ export default function BmiCalculator() {
     return (
         <form className="calculator"onChange={handleSubmit} autoComplete="off" >
             <h3>Enter your details below</h3>
-            <div className="selectBtn">
-                <label onClick={() => {setUnit(true)}}><input className="unit" type="radio" name="metric" defaultChecked />Metric</label>
-                <label onClick={() => {setUnit(false)}}><input className="unit" type="radio" name="imperial" />Imperial</label>
+            <div className="radioBtns">
+                <label onClick={() => {setUnit(true)}} ><input className="unit" type="radio" name="metric" defaultChecked checked={unit} onChange={() => { setUnit(true); }} />Metric</label>
+                <label onClick={() => {setUnit(false)}}><input className="unit" type="radio" name="imperial"  checked={!unit} onChange={() => { setUnit(false); }}/>Imperial</label>
             </div>
             <div className="heightweight">
                 <p className="miniTitle">Height</p>
@@ -77,8 +77,10 @@ export default function BmiCalculator() {
                     </div>
                 }
                 <div className="result">
-                    <h4>Your BMI is...</h4>
-                    <h2>{bmi}</h2>
+                    <span className="result-top-sec">
+                        <h4>Your BMI is...</h4>
+                        <h2>{bmi}</h2>
+                    </span>
                     <p>Your BMI suggests you’re a {result}. Your ideal weight is between 63.3kgs - 85.2kgs.</p>
                 </div>
             </div>
