@@ -53,12 +53,12 @@ export default function BmiCalculator() {
                 {unit 
                     ? 
                     <div className="height">
-                        <input type="text" name="cm" value={height} onChange={(e) => {setHeight(e.target.value)}} placeholder="Enter your height" />
+                        <input type="number" name="cm" value={height} onChange={(e) => {setHeight(e.target.value)}} />
                         <p className="info">cm</p>
                     </div>
                     : 
                     <div className="height">
-                        <input type="text" name="in" value={height} onChange={(e) => {setHeight(e.target.value)}} placeholder="Enter your height" />
+                        <input type="number" name="in" value={height} onChange={(e) => {setHeight(e.target.value)}}  />
                         <p className="info">in</p>
                     </div>
                 }
@@ -67,12 +67,12 @@ export default function BmiCalculator() {
                     unit 
                     ?
                     <div className="weight">
-                        <input type="text" name="kg" value={weight} onChange={(e) => {setWeight(e.target.value)}} placeholder="Enter your weight" />
+                        <input type="number" name="kg" value={weight} onChange={(e) => {setWeight(e.target.value)}} />
                         <p className="info">kg</p>
                     </div>
                     :
                     <div className="weight">
-                        <input type="text" name="lbs" value={weight} onChange={(e) => {setWeight(e.target.value)}} placeholder="Enter your weight" />
+                        <input type="number" name="lbs" value={weight} onChange={(e) => {setWeight(e.target.value)}} />
                         <p className="info">lbs</p>
                     </div>
                 }
