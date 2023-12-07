@@ -76,20 +76,33 @@ body {
         letter-spacing: -1.2px; 
     }
 }
+.msg {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%; /* 21px */ 
+    color: #fff;  
+}
 .radioBtns {
     display: flex;
     gap: 24px;
     color: #253347;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 150%; /* 24px */ 
-}
-.radioBtns label {
-    cursor: pointer;
-}
-.radioBtns input {
-    width: 20px;
-    height: 20px;
+    & input {
+        visibility: hidden;
+    }
+    & label {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 150%; /* 24px */ 
+        background-image: url(/public/radio-icon.svg);
+        background-repeat: no-repeat;
+        background-size: 18px 18px;
+        padding-left: 5px;
+        cursor: pointer;
+        &:has(:checked) {
+            background-image: url(/public/radio-icon-selected.svg);
+            font-weight: bold;
+        }
+    }
 }
 .unit {
     margin-right: 18px;

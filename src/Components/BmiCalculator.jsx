@@ -16,13 +16,13 @@ export default function BmiCalculator() {
             setBmi(w.toFixed(2));
 
             if(w < 18.5) {
-                setResult("Underweight");
+                setResult("Your BMI shows that you are below your ideal weight. Talk to a dietitian to get closer to your ideal.");
             } else if(w >= 18.5 && w < 25) {
-                setResult("Normal Weight");
+                setResult("Your BMI suggests you're a normal weight. Continue to maintain your ideal weight.");
             } else if(w >= 25 && w < 30) {
-                setResult("Overweight");
+                setResult("Your BMI shows that you are much above your ideal weight. To get back to your ideal weight, you urgently need to see a dietitian.");
             } else {
-                setResult("Obesity");
+                setResult("Your BMI shows that you are obese. Get yourself in order and see a dietitian.");
             }
         } else {
             const h = height;
@@ -30,13 +30,13 @@ export default function BmiCalculator() {
             setBmi(w.toFixed(2));
 
             if(w < 18.5) {
-                setResult("Underweight");
+                setResult("Your BMI shows that you are below your ideal weight. Talk to a dietitian to get closer to your ideal.");
             } else if(w >= 18.5 && w < 25) {
-                setResult("Normal Weight");
+                setResult("Your BMI suggests you're a normal weight. Continue to maintain your ideal weight.");
             } else if(w >= 25 && w < 30) {
-                setResult("Overweight");
+                setResult("Your BMI shows that you are much above your ideal weight. To get back to your ideal weight, you urgently need to see a dietitian.");
             } else {
-                setResult("Obesity");
+                setResult("Your BMI shows that you are obese. Get yourself in order and see a dietitian.");
             }
         }
     }
@@ -81,7 +81,7 @@ export default function BmiCalculator() {
                         <h4>Your BMI is...</h4>
                         <h2>{bmi}</h2>
                     </span>
-                    <p>Your BMI suggests you’re a {result}. Your ideal weight is between 63.3kgs - 85.2kgs.</p>
+                    <p>{result}.</p>
                 </div>
             </div>
         </form>

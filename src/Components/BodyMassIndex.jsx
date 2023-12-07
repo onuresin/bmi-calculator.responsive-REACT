@@ -1,4 +1,5 @@
-import Calculator from './Calculator'
+import Calculator from "./BmiCalculator";
+
 
 export default function BodyMassIndex() {
     return (
