@@ -12,7 +12,7 @@ export default function Result() {
             </div>
             <div className="result-inner-tablet-web">
                 <div className="result-left-tab-pc">
-                    <img src="result-content-human.png" alt="sushi-man"/>
+                    <img className="sushi-bastard" src="sushiman-2.png" alt="sushiman-2" />
                 </div>
                 <div className="result-right">
                     <h4>What your BMI result means</h4>

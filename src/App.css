@@ -476,14 +476,25 @@ input[type="number"]::-webkit-outer-spin-button {
         width: 768px;
         display: flex;
         gap: 75px;
+        margin-top: 163px;
+        padding-block: 35px;
         & .result-right {
             width: 331px;
         }
-        
+    .result-left-tab-pc {
+        height: 410px;
+        background-image: url(background-tab-pc.svg);
+        background-repeat: no-repeat;
+        background-position: bottom;
+    }
+    .result-right {
+        gap: 35px;
+        height: 342px
+    }
     }
     .tips-inner {
         width: 768px;
-        margin: 0 auto;
+        margin-top: 96px;
     }
     .tips-content {
         padding: 60px 43px 60px 39px;
@@ -497,7 +508,7 @@ input[type="number"]::-webkit-outer-spin-button {
     }
     .limitations-inner {
         margin: 0 auto;
-        width: 686px;
+        width: 768px;
     }
     .limitation-content {
        padding: 96px 43px 95px 39px;
@@ -515,7 +526,6 @@ input[type="number"]::-webkit-outer-spin-button {
     .limitation-deep {
         display: flex;
         align-items: center;
-        justify-content: center;
     }
 
 }
