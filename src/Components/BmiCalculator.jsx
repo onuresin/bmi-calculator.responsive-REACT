@@ -49,33 +49,40 @@ export default function BmiCalculator() {
                 <label onClick={() => {setUnit(false)}}><input className="unit" type="radio" name="imperial"  checked={!unit} onChange={() => { setUnit(false); }}/>Imperial</label>
             </div>
             <div className="heightweight">
-                <p className="miniTitle">Height</p>
-                {unit 
-                    ? 
-                    <div className="height">
-                        <input type="number" name="cm" value={height} onChange={(e) => {setHeight(e.target.value)}} />
-                        <p className="info">cm</p>
+                <div className="calculator-section">
+                    <div className="calculate-parts">
+                        <div className="mini-title-inner">
+                            <p className="miniTitle">Height</p>
+                            {unit 
+                                    ? 
+                                    <div className="height">
+                                        <input type="number" name="cm" value={height} onChange={(e) => {setHeight(e.target.value)}} />
+                                        <p className="info">cm</p>
+                                    </div>
+                                    : 
+                                    <div className="height">
+                                        <input type="number" name="in" value={height} onChange={(e) => {setHeight(e.target.value)}}  />
+                                        <p className="info">in</p>
+                                    </div>
+                            }
+                        </div>  
+                        <div className="mini-title-inner">
+                            <p className="miniTitle">Weight</p>
+                            {unit 
+                                ?
+                                <div className="weight">
+                                    <input type="number" name="kg" value={weight} onChange={(e) => {setWeight(e.target.value)}} />
+                                    <p className="info">kg</p>
+                                </div>
+                                :
+                                <div className="weight">
+                                    <input type="number" name="lbs" value={weight} onChange={(e) => {setWeight(e.target.value)}} />
+                                    <p className="info">lbs</p>
+                                </div>
+                            }
+                            </div>    
                     </div>
-                    : 
-                    <div className="height">
-                        <input type="number" name="in" value={height} onChange={(e) => {setHeight(e.target.value)}}  />
-                        <p className="info">in</p>
-                    </div>
-                }
-                <p className="miniTitle">Weight</p>
-                {
-                    unit 
-                    ?
-                    <div className="weight">
-                        <input type="number" name="kg" value={weight} onChange={(e) => {setWeight(e.target.value)}} />
-                        <p className="info">kg</p>
-                    </div>
-                    :
-                    <div className="weight">
-                        <input type="number" name="lbs" value={weight} onChange={(e) => {setWeight(e.target.value)}} />
-                        <p className="info">lbs</p>
-                    </div>
-                }
+                </div>
                 <div className="result">
                     <span className="result-top-sec">
                         <h4>Your BMI is...</h4>

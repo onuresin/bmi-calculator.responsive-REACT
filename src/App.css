@@ -59,7 +59,6 @@ body {
     background-color: #fff;
     border-radius: 16px;
     width: 304px;
-    padding-top: 48px;
     z-index: 1;
     box-shadow: 16px 32px 56px 0px rgba(143, 174, 207, 0.25); 
 }
@@ -90,12 +89,17 @@ body {
         visibility: hidden;
     }
     & label {
-        font-size: 16px;
+        display: flex;
+        gap: 18px;
+        align-items: center;
+        justify-content: center;
+        height: 31px;
+        font-size: 18px;
         font-weight: 600;
         line-height: 150%; /* 24px */ 
         background-image: url(/public/radio-icon.svg);
         background-repeat: no-repeat;
-        background-size: 18px 18px;
+        background-size: 31px;
         padding-left: 5px;
         cursor: pointer;
         &:has(:checked) {
@@ -110,6 +114,11 @@ body {
 .heightweight {
     display: flex;
     flex-direction: column;
+    gap: 24px;
+}
+.calculator-section {
+    display: flex;
+    flex-direction: column;
     gap: 16px;
 }
 .miniTitle {
@@ -117,16 +126,15 @@ body {
     font-size: 14px;
     font-weight: 400;
     line-height: 150%; /* 21px */ 
+    margin-bottom: 8px;
 }
 .height, .weight {
     border: 1px solid #d8e2e7;
     border-radius: 12px;
     padding: 20px 24px;
     display: flex;
-    flex-direction: block;
     align-items: center;
-    justify-content: center;
-    gap: 24px;
+    gap: 8px;
     & input {
         border: none;
         color: #253347;
@@ -134,9 +142,10 @@ body {
         font-style: normal;
         font-weight: 600;
         letter-spacing: -1.2px; 
-        width: 173px;
+        width: 181px;
     }
 }
+
 .info {
     color: #345FF6;
     font-size: 24px;
@@ -397,3 +406,86 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 /* Responsive*/
 
+@media (376px <= width <= 768px) {
+    .bmi-content {
+        width: 768px;
+    }
+    .bmi-text {
+        width: 686px;
+    }
+    .bmi-calculator {
+        width: 686px;
+        top: 10%;
+        padding: 32px;
+        position: relative;
+    }
+
+    .radioBtns {
+        & label {
+            width: 299px;
+            font-size: 21px;
+        }
+    }
+
+    .unit {
+        margin-right: -135px;
+    }
+    .weight, .height {
+        width: 272px;
+        gap: 24px;
+        & input {
+            width: 180px;
+        }
+    }
+    .calculate-parts {
+        display: flex;
+        gap: 24px;
+    }
+    .result {
+        border-radius: 16px 999px 999px 16px; 
+        flex-direction: row;
+        & p {
+            width: 267px;
+        }
+    }
+    .result-top-sec {
+        display: flex;
+        width: 267px;
+    }
+    .result-inner {
+        display: none;
+    }
+    .result-inner-tablet-web {
+        width: 768px;
+        display: flex;
+        gap: 75px;
+        & .result-right {
+            width: 331px;
+        }
+        
+    }
+    .tips-inner {
+        width: 768px;
+        margin: 0 auto;
+    }
+    .tips-content {
+        padding: 60px 43px 60px 39px;
+    }
+    .tips-boxes {
+        flex-direction: row;
+        gap: 40px;
+        & .bowl, .barbell, .moon {
+            height: 64px;
+        }
+    }
+}
+
+
+
+
+/* @media (769px <= width <= 1276px) {
+    .bmi-content {
+        width: 1276px;
+    
+    }
+} */
