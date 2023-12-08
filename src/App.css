@@ -214,6 +214,9 @@ input[type="number"]::-webkit-outer-spin-button {
     margin: 0 auto;
     margin-top: 500px;
 }
+.result-inner-tablet-web {
+    display: none;
+}
 .result-section {
     border-radius: 16px;
     background: linear-gradient(90deg, #345FF6 0%, #587DFF 100%);
@@ -345,6 +348,20 @@ input[type="number"]::-webkit-outer-spin-button {
     flex-direction: column;
     gap: 56px;
     padding: 72px 29px 96px 19px;
+}
+.limitation-spec {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    box-shadow: 16px 32px 56px 0px rgba(143, 174, 207, 0.25); 
+    border-radius: 16px; 
+
+}
+.limitation-mid, .limitation-bot, .limitation-deep {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
 }
 .limit-text {
     display: flex;
@@ -478,6 +495,29 @@ input[type="number"]::-webkit-outer-spin-button {
             height: 64px;
         }
     }
+    .limitations-inner {
+        margin: 0 auto;
+        width: 686px;
+    }
+    .limitation-content {
+       padding: 96px 43px 95px 39px;
+    }
+    .limit-text h4{
+        text-align: center;
+    }
+    .limitation-mid, .limitation-bot {
+        flex-direction: row;
+        gap: 15px;
+    }
+    .box-content {
+        width: 335px;
+    }
+    .limitation-deep {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
 }
 
 
