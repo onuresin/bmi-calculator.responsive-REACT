@@ -473,7 +473,7 @@ input[type="number"]::-webkit-outer-spin-button {
         display: none;
     }
     .result-inner-tablet-web {
-        width: 768px;
+        
         display: flex;
         gap: 75px;
         margin-top: 163px;
@@ -533,9 +533,9 @@ input[type="number"]::-webkit-outer-spin-button {
 
 
 
-/* @media (769px <= width <= 1276px) {
+@media (769px <= width <= 1276px) {
     .bmi-content {
         width: 1276px;
     
     }
-} */
+}
