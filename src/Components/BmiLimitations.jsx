@@ -38,9 +38,18 @@ export default function BmiLimitations() {
                                     In aging individuals, increased body fat and muscle loss may cause BMI to underestimate body fat content.
                                 </h6>
                             </div>
+                            <div className="box-content, box-muscle">
+                                    <span className="img-title">
+                                        <img src="fluent-emoji-high-contrast_flexed-biceps.svg" alt="muscle-logo" />
+                                        <h4>Muscle</h4>
+                                    </span>
+                                    <h6>
+                                        BMI may misclassify muscular individuals as overweight or obese, as it doesn't differentiate muscle from fat.
+                                    </h6>
+                                </div>
                         </div>
                         <div className="limitation-bot">
-                            <div className="box-content">
+                            <div className="box-content box-hide">
                                     <span className="img-title">
                                         <img src="fluent-emoji-high-contrast_flexed-biceps.svg" alt="muscle-logo" />
                                         <h4>Muscle</h4>
@@ -58,10 +67,19 @@ export default function BmiLimitations() {
                                         Expectant mothers experience weight gain due to their growing baby. Maintaining a healthy pre-pregnancy BMI is advisable to minimise health risks for both mother and child.
                                     </h6>
                                 </div>
+                                <div className="box-content, box-race">
+                                <span className="img-title">
+                                    <img src="ph_person-light.svg" alt="human-logo" />
+                                    <h4>Race</h4>
+                                </span>
+                                <h6>
+                                    Certain health concerns may affect individuals of some Black and Asian origins at lower BMIs than others. To learn more, it is advised to discuss this with your GP or practice nurse.
+                                </h6>
+                            </div>
                         </div>
                     
                     <div className="limitation-deep">
-                            <div className="box-content">
+                            <div className="box-content box-hide">
                                 <span className="img-title">
                                     <img src="ph_person-light.svg" alt="human-logo" />
                                     <h4>Race</h4>
