@@ -1,22 +1,25 @@
 export default function Result() {
     return (
         <>
+            <div className="half-vektor">
+                <img src="Vector 24.svg" alt="vektor" />
+            </div>
             <div className="result-inner">
                 <div className="result-left">
-                    <img src="result-content-human.png" alt="sushi-man"/>
+                    <img src="bstrd-sushiman.svg" alt="sushi-man"/>
                 </div>
                 <div className="result-right">
                     <h4>What your BMI result means</h4>
-                    <h5>A BMI range of 18.5 to 24.9 is considered a 'healthy weight.' Maintaining a healthy weight may lower your chances of experiencing health issues later on, such as obesity and type 2 diabetes. Aim for a nutritious diet with reduced fat and sugar content, incorporating ample fruits and vegetables. Additionally, strive for regular physical activity, ideally about 30 minutes daily for five days a week.</h5>
+                    <img src="a-bmi-range.svg" alt="bmi-range-mob" />
                 </div>
             </div>
             <div className="result-inner-tablet-web">
                 <div className="result-left-tab-pc">
-                    <img className="sushi-bastard" src="sushiman-2.png" alt="sushiman-2" />
+                    <img className="sushi-bastard" src="sushi-bstard-tablet.svg" alt="sushiman-2" />
                 </div>
                 <div className="result-right">
                     <h4>What your BMI result means</h4>
-                    <h5>A BMI range of 18.5 to 24.9 is considered a 'healthy weight.' Maintaining a healthy weight may lower your chances of experiencing health issues later on, such as obesity and type 2 diabetes. Aim for a nutritious diet with reduced fat and sugar content, incorporating ample fruits and vegetables. Additionally, strive for regular physical activity, ideally about 30 minutes daily for five days a week.</h5>
+                    <img src="a-bmi-range.svg" alt="bmi-range-tab-pc" />
                 </div>
             </div>
         </> 

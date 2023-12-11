@@ -20,7 +20,7 @@ export default function BmiLimitations() {
                 <div className="limitation-spec">
                     
                         <div className="limitation-mid">
-                            <div className="box-content">
+                            <div className="box-content, box-content-m">
                                 <span className="img-title">
                                     <img src="ph_gender-intersex-light.svg" alt="intersex-logo" />
                                     <h4>Gender</h4>
