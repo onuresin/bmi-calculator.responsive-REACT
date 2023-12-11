@@ -5,7 +5,7 @@ export default function BmiCalculator() {
     const [height, setHeight] = useState(185);
     const [weight, setWeight] = useState(80);
     const [bmi, setBmi] = useState(23.37);
-    const [result, setResult] = useState('Normal Weight');
+    const [result, setResult] = useState('Enter your height and weight and you’ll see your BMI result here');
     const [unit, setUnit] = useState(true);
 
     const handleSubmit = (e) => {

@@ -116,11 +116,6 @@ body {
     flex-direction: column;
     gap: 24px;
 }
-.calculator-section {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
 .miniTitle {
     color: #5E6E85;
     font-size: 14px;
@@ -533,9 +528,71 @@ input[type="number"]::-webkit-outer-spin-button {
 
 
 
-@media (769px <= width <= 1276px) {
+@media (min-width: 769px) {
     .bmi-content {
-        width: 1276px;
-    
+        width: 978px;
+    }
+    .bmi-text {
+        width: 564px;
+        padding: 75px 0 0 11px;
+        align-items: start;
+        padding-inline: 0px;
+        & .bmi-logo {
+         padding: 0;
+        }
+        & h4 {
+            margin-top: 131px;
+            text-align: start;
+            font-size: 64px;
+            font-weight: 600;
+            line-height: 110%; /* 70.4px */
+            letter-spacing: -3.2px; 
+        }
+        & h6 {
+            text-align: start;
+            width: 465px;
+        }
+    }
+    .bmi-calculator {
+        width: 564px;
+        left: 60%;
+        top: 22%;
+    }
+    .calculator {
+        padding: 32px;
+        gap: 32px;
+    }
+    .radioBtns {
+        gap: 32px;
+        & label {
+            width: 238px;
+            padding-right: 146px;
+        }
+    }
+    .heightweight {
+        gap: 32px;
+    }
+    .calculate-parts {
+        display: flex;
+        gap: 24px;
+        & .mini-title-inner {
+            width: 238px;
+        }
+    }
+    .height, .weight {
+        gap: 24px;
+        & input {
+            width: 131px;
+        }
+    }
+    .result {
+        border-radius: 16px 999px 999px 16px; 
+        flex-direction: row;
+        & p {
+            width: 208px;
+        }
+        & .result-top-sec {
+            width: 206px;
+        }
     }
 }
