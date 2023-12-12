@@ -370,6 +370,9 @@ input[type="number"]::-webkit-outer-spin-button {
         line-height: 150%; /* 24px */ 
     }
 }
+.vektor-hide {
+    display: none;
+}
 .box-content-h, .box-muscle, .box-race {
     display: none;
 }
@@ -663,5 +666,12 @@ input[type="number"]::-webkit-outer-spin-button {
     }
     .limitation-bot {
         justify-content: center;
+    }
+    .vektor-bot {
+        display: block;
+        width: 94px;
+        height: 122px;
+        margin-right: 139px;
+        margin-top: -2%;
     }
 }

@@ -20,6 +20,9 @@ export default function BmiLimitations() {
                 <div className="limitation-spec">
                     
                         <div className="limitation-mid">
+                            <div className="vektor-bot vektor-hide">
+                                <img src="bot-vektor.svg" alt="vektor-bot" />
+                            </div>
                             <div className="box-content, box-content-m">
                                 <span className="img-title">
                                     <img src="ph_gender-intersex-light.svg" alt="intersex-logo" />
