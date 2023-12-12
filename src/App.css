@@ -246,9 +246,7 @@ input[type="number"]::-webkit-outer-spin-button {
     font-weight: 700;
     line-height: 150%; 
 }
-.half-vektor {
-    display: none;
-}
+
 .result-left {
     & img {
         width: 375px;
@@ -268,6 +266,9 @@ input[type="number"]::-webkit-outer-spin-button {
         letter-spacing: -1.6px; 
 
     }
+}
+.bmi-pc {
+    display: none;
 }
 
 /*tips section*/
@@ -593,8 +594,9 @@ input[type="number"]::-webkit-outer-spin-button {
     }
     .result-inner {
         width: 1160px;
-        padding-inline: 140px;
         flex-direction: row;
+        margin-top: -133px;
+        gap: 131px;
         & .result-left img {
             width: 564px;
         }
@@ -602,6 +604,8 @@ input[type="number"]::-webkit-outer-spin-button {
     .result-right {
         width: 465px;
         gap: 35px;
+        padding-inline: 0;
+        margin-top: 180px;
         & h4 {
             font-size: 48px;
             font-weight: 600;
@@ -609,7 +613,24 @@ input[type="number"]::-webkit-outer-spin-button {
             letter-spacing: -2.4px; 
         }
     }
+    .bmi-tab-mob {
+        display: none;
+    }
+    .bmi-pc {
+        display: block;
+    }
+    .half-vektor {
+        position: relative;
+        width: 85px;
+        height: 200px;
+    }
+    .vektor-top {
+       position: absolute;
+       top: 7%;
+       left: 1680%;
+    }
     .tips-inner {
+        margin-top: 96px;
         width: 1392px;
     }
     .tips-content {
@@ -623,6 +644,9 @@ input[type="number"]::-webkit-outer-spin-button {
     .limitation-top {
         display: flex;
         gap: 132px;
+    }
+    .limitations-inner {
+        margin-top: 120px;
     }
     .limit-text {
         width: 564px;
@@ -673,5 +697,8 @@ input[type="number"]::-webkit-outer-spin-button {
         height: 122px;
         margin-right: 139px;
         margin-top: -2%;
+    }
+    .half-vektor {
+        display: block;
     }
 }
