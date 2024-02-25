@@ -3,7 +3,7 @@ export default function Result() {
         <>
             <div className="result-inner">
                 <div className="result-left">
-                    <img src="bstrd-sushiman.svg" alt="sushi-man"/>
+                    <img src="bstrd-sushiman.png" alt="sushi-man"/>
                 </div>
                 <div className="result-right">
                     <h4>What your BMI result means</h4>

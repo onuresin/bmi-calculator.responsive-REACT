@@ -11,12 +11,13 @@ body {
     font-family: 'Inter-SemiBold';
 }
 .container {
+    width: auto;
     margin: 0 auto;
 }
 .bmi-content {
     position: relative;
     background-color: #fff;
-    width: 375px;
+    width: auto;
     height: 750px;
     margin: 0 auto;
     background-image: url('bmi-content-background-mobile.png');
@@ -28,7 +29,6 @@ body {
     display: flex;
     flex-direction: column;
     gap: 24px;
-    width: 327px;
     padding-inline: 24px;
     align-items: center;
     & .bmi-logo {
@@ -58,7 +58,7 @@ body {
     margin: 0 auto;
     background-color: #fff;
     border-radius: 16px;
-    width: 304px;
+    width: 87%;
     z-index: 1;
     box-shadow: 16px 32px 56px 0px rgba(143, 174, 207, 0.25); 
 }
@@ -205,7 +205,7 @@ input[type="number"]::-webkit-outer-spin-button {
     display: flex;
     flex-direction: column;
     gap: 48px;;
-    width: 375px;
+    width: 100%;
     margin: 0 auto;
     margin-top: 500px;
 }
@@ -249,8 +249,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .result-left {
     & img {
-        width: 375px;
-        padding: 32px 32px 0 32px;
+        width: 100%;
     }
 }
 .result-right {
@@ -274,7 +273,7 @@ input[type="number"]::-webkit-outer-spin-button {
 /*tips section*/
 .tips-inner {
     background-color: #f7fbfe;
-    width: 375px;
+    width: 100%;
     margin: 0 auto;
 }
 .tips-content {
@@ -419,21 +418,22 @@ input[type="number"]::-webkit-outer-spin-button {
 
 @media (376px <= width <= 768px) {
     .bmi-content {
-        width: 768px;
+        width: auto;
+        margin: 0 auto;
     }
     .bmi-text {
-        width: 686px;
+        width: 89%;
+        margin: 0 auto;
     }
     .bmi-calculator {
-        width: 686px;
+        width: 89%;
         top: 10%;
-        padding: 32px;
         position: relative;
     }
 
     .radioBtns {
         & label {
-            width: 299px;
+            width: 50%;
             font-size: 21px;
         }
     }
@@ -471,21 +471,24 @@ input[type="number"]::-webkit-outer-spin-button {
         display: none;
     }
     .result-inner-tablet-web {
-        
+        width: 100%;
         display: flex;
         gap: 75px;
         margin-top: 163px;
         padding-block: 35px;
         & .result-right {
-            width: 331px;
+            width: 43%;
         }
+    .result-left-tab-pc img{
+        width: 100%;
+    }
     .result-right {
         gap: 35px;
         height: 342px
     }
     }
     .tips-inner {
-        width: 768px;
+        width:100%;
         margin-top: 96px;
     }
     .tips-content {
@@ -502,20 +505,33 @@ input[type="number"]::-webkit-outer-spin-button {
         margin: 0 auto;
         width: 768px;
     }
+    .limitation-top {
+        width: 89%;
+         margin: 0 auto;
+    }
     .limitation-content {
+        width: 100%;
+        margin: 0 auto;
        padding: 96px 43px 95px 39px;
+    }
+    .limitation-spec{
+        width: auto;
+        margin: 0 auto;
     }
     .limit-text h4{
         text-align: center;
     }
     .limitation-mid, .limitation-bot {
+        width: 100%;
+        margin: 0 auto;
         flex-direction: row;
         gap: 15px;
     }
-    .box-content {
-        width: 335px;
+    .box-content, .box-content-m {
+        width: 49%;
     }
     .limitation-deep {
+        width: 100%;
         display: flex;
         align-items: center;
     }
